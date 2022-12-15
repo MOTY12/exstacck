@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exstacck</title>
+    <link rel="stylesheet" href="./asset/css/fonts.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="./asset/images/Logo.png" alt="">
+        </div>
+    </div>
+    <div class="con-signup">
+        <div>
+            <h1>Join as a Instructor or Learner</h1>
+            <div class="hdr">
+                <div class="role-rdr">
+                    <input type="radio" id="instructor" name="user" value="instructor" id="instructor">
+                    <label for="instructor">I'm a Instructor</label>
+                </div>
+                <div class="role-rdr">
+                    <input type="radio" id="learner" name="user" value="learner" id="learner">
+                    <label for="learner">I'm a Learner</label>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#" class="get-btn">Get Early Access</button>
+            </div>
+        </div>
+    </div>    
+</body>
+<script>
+    //change a HREF link when the radio button is clicked
+    const instructor = document.getElementById('instructor');   
+    const learner = document.getElementById('learner');
+    const getBtn = document.querySelector('.get-btn');
+    instructor.addEventListener('click', function(){
+        getBtn.setAttribute('href', 'instructor.html');
+    });
+    learner.addEventListener('click', function(){
+        getBtn.setAttribute('href', 'learner.html');
+    });
+
+
+</script>
+</html>
